@@ -34,23 +34,29 @@
             220.0,
             20.0
           ],
-          "text": "Clip Announcer (Phase 1)"
+          "text": "Clip Announcer (3-Button Beta)"
         }
       },
       {
         "box": {
-          "hidden": 1,
           "id": "obj-2",
           "maxclass": "comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            24.0,
-            52.0,
-            80.0,
+            18.0,
+            90.0,
+            56.0,
             20.0
           ],
-          "text": "ANNOUNCE"
+          "presentation": 1,
+          "presentation_rect": [
+            18.0,
+            74.0,
+            56.0,
+            20.0
+          ],
+          "text": "WHERE"
         }
       },
       {
@@ -82,14 +88,193 @@
                 "off",
                 "on"
               ],
-              "parameter_longname": "announce_button",
+              "parameter_longname": "where_button",
               "parameter_mmax": 1,
               "parameter_modmode": 0,
-              "parameter_shortname": "announce_button",
+              "parameter_shortname": "where_button",
               "parameter_type": 2
             }
           },
-          "varname": "announce_button"
+          "varname": "where_button"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-16",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            92.0,
+            90.0,
+            56.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            92.0,
+            74.0,
+            56.0,
+            20.0
+          ],
+          "text": "WHAT"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-17",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            166.0,
+            90.0,
+            56.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            166.0,
+            74.0,
+            56.0,
+            20.0
+          ],
+          "text": "STATE"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-18",
+          "maxclass": "live.button",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "parameter_enable": 1,
+          "patching_rect": [
+            184.0,
+            50.0,
+            36.0,
+            36.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            92.0,
+            16.0,
+            56.0,
+            56.0
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_longname": "what_button",
+              "parameter_mmax": 1,
+              "parameter_modmode": 0,
+              "parameter_shortname": "what_button",
+              "parameter_type": 2
+            }
+          },
+          "varname": "what_button"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-19",
+          "maxclass": "live.button",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "parameter_enable": 1,
+          "patching_rect": [
+            258.0,
+            50.0,
+            36.0,
+            36.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            166.0,
+            16.0,
+            56.0,
+            56.0
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_longname": "state_button",
+              "parameter_mmax": 1,
+              "parameter_modmode": 0,
+              "parameter_shortname": "state_button",
+              "parameter_type": 2
+            }
+          },
+          "varname": "state_button"
+        }
+      },
+      {
+        "box": {
+          "hidden": 1,
+          "id": "obj-20",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            110.0,
+            90.0,
+            98.0,
+            22.0
+          ],
+          "text": "announce_where"
+        }
+      },
+      {
+        "box": {
+          "hidden": 1,
+          "id": "obj-21",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            220.0,
+            90.0,
+            92.0,
+            22.0
+          ],
+          "text": "announce_what"
+        }
+      },
+      {
+        "box": {
+          "hidden": 1,
+          "id": "obj-22",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            324.0,
+            90.0,
+            95.0,
+            22.0
+          ],
+          "text": "announce_state"
         }
       },
       {
@@ -241,67 +426,6 @@
           ],
           "text": "Selection state + summary logs are printed to the Max Console by clip_announcer.js"
         }
-      },
-      {
-        "box": {
-          "hidden": 1,
-          "id": "obj-13",
-          "maxclass": "newobj",
-          "numinlets": 0,
-          "numoutlets": 3,
-          "outlettype": [
-            "int",
-            "int",
-            "int"
-          ],
-          "patching_rect": [
-            24.0,
-            200.0,
-            46.0,
-            22.0
-          ],
-          "text": "notein"
-        }
-      },
-      {
-        "box": {
-          "hidden": 1,
-          "id": "obj-14",
-          "maxclass": "newobj",
-          "numinlets": 2,
-          "numoutlets": 2,
-          "outlettype": [
-            "int",
-            "int"
-          ],
-          "patching_rect": [
-            80.0,
-            200.0,
-            62.0,
-            22.0
-          ],
-          "text": "stripnote"
-        }
-      },
-      {
-        "box": {
-          "hidden": 1,
-          "id": "obj-15",
-          "maxclass": "newobj",
-          "numinlets": 1,
-          "numoutlets": 2,
-          "outlettype": [
-            "bang",
-            ""
-          ],
-          "patching_rect": [
-            152.0,
-            200.0,
-            50.0,
-            22.0
-          ],
-          "text": "sel 60"
-        }
       }
     ],
     "lines": [
@@ -334,7 +458,7 @@
       {
         "patchline": {
           "destination": [
-            "obj-6",
+            "obj-20",
             0
           ],
           "hidden": 1,
@@ -353,6 +477,71 @@
           "hidden": 1,
           "source": [
             "obj-6",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-6",
+            0
+          ],
+          "hidden": 1,
+          "source": [
+            "obj-20",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-21",
+            0
+          ],
+          "hidden": 1,
+          "source": [
+            "obj-18",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-6",
+            0
+          ],
+          "hidden": 1,
+          "source": [
+            "obj-21",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-22",
+            0
+          ],
+          "hidden": 1,
+          "source": [
+            "obj-19",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-6",
+            0
+          ],
+          "hidden": 1,
+          "source": [
+            "obj-22",
             0
           ]
         }
@@ -382,64 +571,22 @@
             0
           ]
         }
-      },
-      {
-        "patchline": {
-          "destination": [
-            "obj-14",
-            0
-          ],
-          "hidden": 1,
-          "source": [
-            "obj-13",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "destination": [
-            "obj-14",
-            1
-          ],
-          "hidden": 1,
-          "source": [
-            "obj-13",
-            1
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "destination": [
-            "obj-15",
-            0
-          ],
-          "hidden": 1,
-          "source": [
-            "obj-14",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "destination": [
-            "obj-6",
-            0
-          ],
-          "hidden": 1,
-          "source": [
-            "obj-15",
-            0
-          ]
-        }
       }
     ],
     "parameters": {
       "obj-3": [
-        "announce_button",
-        "announce_button",
+        "where_button",
+        "where_button",
+        0
+      ],
+      "obj-18": [
+        "what_button",
+        "what_button",
+        0
+      ],
+      "obj-19": [
+        "state_button",
+        "state_button",
         0
       ],
       "inherited_shortname": 1

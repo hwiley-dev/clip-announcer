@@ -30,10 +30,11 @@ Users should receive only `dist/ClipAnnouncer.amxd`.
 
 ### Trigger behavior
 
-- ANNOUNCE can be triggered by:
-  - Clicking the device button.
-  - Playing MIDI note number `60` with velocity > 0 (no manual mapping required).
-- Note: Live/Max for Live does not provide a reliable pre-bound global computer-keystroke assignment per device instance, so MIDI trigger is the deterministic no-mapping path.
+- Category announce can be triggered by:
+  - Clicking `WHERE`, `WHAT`, or `STATE` in the device UI.
+  - Mapping keyboard keys to those buttons in Live Key Map mode.
+- No raw MIDI note trigger path is wired, so note input for instruments is not intercepted by Clip Announcer.
+- Note: Live/Max for Live still does not provide a reliable per-device global keyboard-combo API.
 
 ## Release Workflow
 
@@ -68,6 +69,6 @@ Users should receive only `dist/ClipAnnouncer.amxd`.
 - [ ] `dist/clip_announcer.js` and `dist/clip_announcer_tts.js` removed after strict pass.
 - [ ] No startup missing-file errors.
 - [ ] No `jsliveapi property cannot be listened to` warning during normal use.
-- [ ] ANNOUNCE returns deterministic summary in console.
+- [ ] `WHERE`, `WHAT`, and `STATE` return deterministic category summaries in console.
 - [ ] Speech is audible and does not overlap/spam.
 - [ ] Device works when only the release `.amxd` is present.

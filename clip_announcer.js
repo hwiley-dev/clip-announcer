@@ -78,6 +78,22 @@ function list() {
 }
 
 function announce() {
+    performAnnounce("ANNOUNCE", buildSummary);
+}
+
+function announce_where() {
+    performAnnounce("WHERE", buildWhereSummary);
+}
+
+function announce_what() {
+    performAnnounce("WHAT", buildWhatSummary);
+}
+
+function announce_state() {
+    performAnnounce("STATE", buildStateSummary);
+}
+
+function performAnnounce(label, buildFn) {
     var now = Date.now();
     if (now < announceCooldownUntil) {
         postInfo("announce skipped (debounce)");
@@ -92,8 +108,8 @@ function announce() {
         return;
     }
 
-    var summary = buildSummary(state);
-    postInfo("ANNOUNCE -> " + summary);
+    var summary = buildFn(state);
+    postInfo(label + " -> " + summary);
     outlet(0, "speak", summary);
 }
 
@@ -242,18 +258,47 @@ function makeSignature(s) {
 }
 
 function buildSummary(s) {
+    return [buildWhereSummary(s), buildWhatSummary(s), buildStateSummary(s)].join(" ");
+}
+
+function buildWhereSummary(s) {
     var trackIndexText = s.track_index > 0 ? s.track_index : "?";
     var slotIndexText = s.slot_index >= 0 ? (s.slot_index + 1) : "?";
+    var trackName = safeLabel(s.track_name, "Unknown Track");
 
+    return "Track " + trackIndexText + ": " + trackName + ". Slot " + slotIndexText + ".";
+}
+
+function buildWhatSummary(s) {
     var clipName = s.has_clip === 1 ? safeLabel(s.clip_name, "(Unnamed Clip)") : "Empty";
+    if (s.has_clip !== 1) {
+        return "Clip: " + clipName + ".";
+    }
 
-    var lines = [];
-    lines.push("Track " + trackIndexText + ": " + safeLabel(s.track_name, "Unknown Track") + ".");
-    lines.push("Slot " + slotIndexText + ".");
-    lines.push("Clip: " + clipName + ".");
-    lines.push("Status: " + s.status + ".");
+    var lengthText = formatBeats(s.clip_length);
+    var loopStartText = formatBeats(s.loop_start);
+    var loopEndText = formatBeats(s.loop_end);
+    var loopingText = s.looping === 1 ? "On" : "Off";
 
-    return lines.join(" ");
+    return "Clip: " + clipName + ". Length: " + lengthText + " beats. Loop: " + loopingText + ", " + loopStartText + " to " + loopEndText + " beats.";
+}
+
+function buildStateSummary(s) {
+    return "Status: " + s.status + ".";
+}
+
+function formatBeats(n) {
+    var value = parseFloat(n);
+    if (isNaN(value)) {
+        return "0";
+    }
+
+    var rounded = Math.round(value * 100) / 100;
+    if (Math.abs(rounded - Math.round(rounded)) < 0.0001) {
+        return String(Math.round(rounded));
+    }
+
+    return String(rounded);
 }
 
 function postStructured(s) {

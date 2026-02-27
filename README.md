@@ -4,17 +4,18 @@ Clip Announcer is a Max for Live device that reads the currently highlighted cli
 
 ## What It Does
 
-- Adds an `ANNOUNCE` button in the device UI.
+- Adds three category buttons in the device UI: `WHERE`, `WHAT`, `STATE`.
 - Reads selected track and highlighted clip slot state through LiveAPI.
 - Logs deterministic status details to the Max Console.
 - Speaks a short summary through `node.script` using the macOS `say` command.
-- Supports a no-mapping hardware/software trigger via MIDI note `60` (velocity > 0).
+- Uses button-driven triggers only (no raw MIDI note trigger path).
 
 ## Trigger Model
 
-- Manual trigger: click `ANNOUNCE`.
-- Deterministic auto trigger path: send MIDI note `60`.
-- Computer keyboard pre-binding per device instance is not guaranteed in Live/M4L, so keyboard-only automation may be focus/conflict dependent.
+- Manual triggers: click `WHERE`, `WHAT`, or `STATE`.
+- Keyboard mapping path: map each button in Ableton Live Key Map mode.
+- No default MIDI note trigger is wired, to avoid collisions with instrument keyboard input.
+- Live/M4L still does not expose a deterministic per-device global keyboard combo API, so mapping behavior remains Live-focus dependent.
 
 ## Repository Layout
 
@@ -32,9 +33,8 @@ Clip Announcer is a Max for Live device that reads the currently highlighted cli
 1. Open Ableton Live with Max for Live available.
 2. Load `dist/ClipAnnouncer.amxd` on a MIDI track.
 3. Highlight a clip slot in Session View.
-4. Trigger announce by:
-   - Clicking `ANNOUNCE`, or
-   - Sending MIDI note `60` with velocity > 0.
+4. Trigger announce by clicking `WHERE`, `WHAT`, or `STATE`.
+5. Optional: enter Ableton Key Map mode and map keyboard keys to those three buttons.
 
 ## Release Workflow
 

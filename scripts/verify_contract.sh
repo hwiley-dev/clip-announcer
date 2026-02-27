@@ -27,6 +27,9 @@ require_pattern() {
 
 require_pattern "$JS_FILE" '^function init\(' 'JS command: init()'
 require_pattern "$JS_FILE" '^function announce\(' 'JS command: announce()'
+require_pattern "$JS_FILE" '^function announce_where\(' 'JS command: announce_where()'
+require_pattern "$JS_FILE" '^function announce_what\(' 'JS command: announce_what()'
+require_pattern "$JS_FILE" '^function announce_state\(' 'JS command: announce_state()'
 require_pattern "$JS_FILE" '^function dump_state\(' 'JS command: dump_state()'
 require_pattern "$JS_FILE" '^function refresh\(' 'JS command: refresh()'
 require_pattern "$JS_FILE" '\[ClipAnnouncer\]' 'JS log prefix'

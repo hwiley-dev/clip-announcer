@@ -1,0 +1,96 @@
+Clip Announcer Beta: Session UI Terms Inventory
+Updated: February 27, 2026
+
+Scope:
+- Spoken summary output
+- Structured STATE console output
+- Device UI trigger naming
+
+1) Exact Spoken Vocabulary (Current Beta)
+- Track
+- Slot
+- Clip
+- Status
+- Unknown Track
+- Empty
+- (Unnamed Clip)
+- Recording
+- Playing
+- Stopped
+- ?
+
+Current spoken template:
+- Track {track_index}: {track_name}.
+- Slot {slot_index}.
+- Clip: {clip_name or Empty}.
+- Status: {Stopped|Playing|Recording}.
+
+2) Complete Exposed Session Terms (Data/Fields)
+- track_index
+- track_name
+- track_id
+- slot_index
+- slot_id
+- has_clip
+- clip_id
+- clip_name
+- clip_length
+- looping
+- loop_start
+- loop_end
+- status
+
+Related LiveAPI properties currently queried:
+- selected_track
+- selected_scene
+- highlighted_clip_slot
+- name (track/clip)
+- has_clip
+- is_recording
+- is_playing
+- clip
+- length
+- looping
+- loop_start
+- loop_end
+
+3) Workflow Grouping (Live Performance)
+Group 1: Orientation / Location
+- Terms: track_index, track_name, slot_index, selected_track, selected_scene, highlighted_clip_slot, Track, Slot, Unknown Track, ?
+
+Group 2: Clip Presence Check
+- Terms: has_clip, clip_id, clip_name, Clip, Empty, (Unnamed Clip)
+
+Group 3: Action Status Check
+- Terms: status, is_recording, is_playing, Status, Recording, Playing, Stopped
+
+Group 4: Timing / Loop Awareness
+- Terms: clip_length, looping, loop_start, loop_end, length
+
+Group 5: Trigger + Feedback Layer
+- Terms: WHERE, WHAT, STATE (button labels), where_button, what_button, state_button, SUMMARY, STATE
+
+4) Exposed But Not Spoken Yet
+- track_id
+- slot_id
+- clip_id
+- clip_length
+- looping
+- loop_start
+- loop_end
+
+5) Proposed 3-Button Category Model (Next Iteration)
+Button WHERE
+- Primary question: Where am I in Session?
+- Term focus: track_index, track_name, slot_index, selected_track, selected_scene, highlighted_clip_slot
+- Template: Track {index}: {name}. Slot {index}.
+
+Button WHAT
+- Primary question: What is in this slot?
+- Term focus: has_clip, clip_name, clip_id, clip_length, looping, loop_start, loop_end
+- Template: Clip: {name or Empty}. Length: {length}. Loop: {on/off}, {start} to {end}.
+
+Button STATE
+- Primary question: What is it doing right now?
+- Term focus: status, is_recording, is_playing, Recording, Playing, Stopped
+- Template: Status: {Stopped|Playing|Recording}.
