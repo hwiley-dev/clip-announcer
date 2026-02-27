@@ -1,0 +1,44 @@
+workflow_group,term,kind,current_surface,notes
+orientation_location,?,spoken_fallback,speech_summary,Fallback index token
+orientation_location,highlighted_clip_slot,liveapi_property,state_refresh,From live_set view
+orientation_location,selected_scene,liveapi_property,state_refresh,From live_set view
+orientation_location,selected_track,liveapi_property,state_refresh,From live_set view
+orientation_location,Slot,spoken_label,speech_summary,Fixed summary token
+orientation_location,slot_index,state_field,speech_summary|state_json,0-based in state; +1 in speech
+orientation_location,Track,spoken_label,speech_summary,Fixed summary token
+orientation_location,track_index,state_field,speech_summary|state_json,1-based in speech
+orientation_location,track_name,state_field,speech_summary|state_json,Dynamic track name
+orientation_location,Unknown Track,spoken_fallback,speech_summary,Fallback track name
+clip_presence,(Unnamed Clip),spoken_fallback,speech_summary,Fallback clip name
+clip_presence,Clip,spoken_label,speech_summary,Fixed summary token
+clip_presence,clip,liveapi_property,state_refresh,Slot->clip id lookup
+clip_presence,clip_id,state_field,state_json,Clip object id
+clip_presence,clip_name,state_field,speech_summary|state_json,Dynamic clip name
+clip_presence,Empty,spoken_fallback,speech_summary,Used when has_clip != 1
+clip_presence,has_clip,state_field,state_json,Slot occupancy flag
+action_status,is_playing,liveapi_property,state_refresh,Slot transport flag
+action_status,is_recording,liveapi_property,state_refresh,Slot transport flag
+action_status,Playing,spoken_state_value,speech_summary|state_json,Derived from is_playing
+action_status,Recording,spoken_state_value,speech_summary|state_json,Derived from is_recording
+action_status,Status,spoken_label,speech_summary,Fixed summary token
+action_status,status,state_field,speech_summary|state_json,Derived status field
+action_status,Stopped,spoken_state_value,speech_summary|state_json,Fallback status
+timing_loop,clip_length,state_field,state_json,Clip duration
+timing_loop,length,liveapi_property,state_refresh,Clip length source
+timing_loop,loop_end,state_field,state_json,Loop end position
+timing_loop,loop_end,liveapi_property,state_refresh,Clip loop end source
+timing_loop,loop_start,state_field,state_json,Loop start position
+timing_loop,loop_start,liveapi_property,state_refresh,Clip loop start source
+timing_loop,looping,state_field,state_json,Loop enable flag
+timing_loop,looping,liveapi_property,state_refresh,Clip looping source
+trigger_feedback,STATE,device_ui_label,m4l_device_ui,Category trigger control
+trigger_feedback,STATE,console_label,max_console,Structured JSON line
+trigger_feedback,state_button,device_parameter,m4l_device_ui,Live parameter name
+trigger_feedback,SUMMARY,console_label,max_console,Human-readable summary line
+trigger_feedback,WHAT,device_ui_label,m4l_device_ui,Category trigger control
+trigger_feedback,what_button,device_parameter,m4l_device_ui,Live parameter name
+trigger_feedback,WHERE,device_ui_label,m4l_device_ui,Category trigger control
+trigger_feedback,where_button,device_parameter,m4l_device_ui,Live parameter name
+identity_reference,name,liveapi_property,state_refresh,Track/clip name property
+identity_reference,slot_id,state_field,state_json,Clip slot object id
+identity_reference,track_id,state_field,state_json,Track object id
