@@ -1,0 +1,222 @@
+layer,object,canonical_path,member_type,member_name
+selection,Song.View,live_set view,child,detail_clip
+selection,Song.View,live_set view,child,highlighted_clip_slot
+selection,Song.View,live_set view,child,selected_chain
+selection,Song.View,live_set view,child,selected_parameter
+selection,Song.View,live_set view,child,selected_scene
+selection,Song.View,live_set view,child,selected_track
+selection,Song.View,live_set view,property,draw_mode
+selection,Song.View,live_set view,property,follow_song
+session_global,Song,live_set,child,cue_points
+session_global,Song,live_set,child,return_tracks
+session_global,Song,live_set,child,scenes
+session_global,Song,live_set,child,tracks
+session_global,Song,live_set,child,visible_tracks
+session_global,Song,live_set,child,master_track
+session_global,Song,live_set,child,view
+session_global,Song,live_set,child,groove_pool
+session_global,Song,live_set,child,tuning_system
+session_global,Song,live_set,property,appointed_device
+session_global,Song,live_set,property,arrangement_overdub
+session_global,Song,live_set,property,back_to_arranger
+session_global,Song,live_set,property,can_capture_midi
+session_global,Song,live_set,property,can_jump_to_next_cue
+session_global,Song,live_set,property,can_jump_to_prev_cue
+session_global,Song,live_set,property,can_redo
+session_global,Song,live_set,property,can_undo
+session_global,Song,live_set,property,clip_trigger_quantization
+session_global,Song,live_set,property,count_in_duration
+session_global,Song,live_set,property,current_song_time
+session_global,Song,live_set,property,exclusive_arm
+session_global,Song,live_set,property,exclusive_solo
+session_global,Song,live_set,property,file_path
+session_global,Song,live_set,property,groove_amount
+session_global,Song,live_set,property,is_ableton_link_enabled
+session_global,Song,live_set,property,is_ableton_link_start_stop_sync_enabled
+session_global,Song,live_set,property,is_counting_in
+session_global,Song,live_set,property,is_playing
+session_global,Song,live_set,property,last_event_time
+session_global,Song,live_set,property,loop
+session_global,Song,live_set,property,loop_length
+session_global,Song,live_set,property,loop_start
+session_global,Song,live_set,property,metronome
+session_global,Song,live_set,property,midi_recording_quantization
+session_global,Song,live_set,property,name
+session_global,Song,live_set,property,nudge_down
+session_global,Song,live_set,property,nudge_up
+session_global,Song,live_set,property,tempo_follower_enabled
+session_global,Song,live_set,property,overdub
+session_global,Song,live_set,property,punch_in
+session_global,Song,live_set,property,punch_out
+session_global,Song,live_set,property,re_enable_automation_enabled
+session_global,Song,live_set,property,record_mode
+session_global,Song,live_set,property,root_note
+session_global,Song,live_set,property,scale_intervals
+session_global,Song,live_set,property,scale_mode
+session_global,Song,live_set,property,scale_name
+session_global,Song,live_set,property,select_on_launch
+session_global,Song,live_set,property,session_automation_record
+session_global,Song,live_set,property,session_record
+session_global,Song,live_set,property,session_record_status
+session_global,Song,live_set,property,signature_denominator
+session_global,Song,live_set,property,signature_numerator
+session_global,Song,live_set,property,song_length
+session_global,Song,live_set,property,start_time
+session_global,Song,live_set,property,swing_amount
+session_global,Song,live_set,property,tempo
+scene,Scene,live_set scenes N,child,clip_slots
+scene,Scene,live_set scenes N,property,color
+scene,Scene,live_set scenes N,property,color_index
+scene,Scene,live_set scenes N,property,is_empty
+scene,Scene,live_set scenes N,property,is_triggered
+scene,Scene,live_set scenes N,property,name
+scene,Scene,live_set scenes N,property,tempo
+scene,Scene,live_set scenes N,property,tempo_enabled
+scene,Scene,live_set scenes N,property,time_signature_numerator
+scene,Scene,live_set scenes N,property,time_signature_denominator
+scene,Scene,live_set scenes N,property,time_signature_enabled
+track,Track,live_set tracks N,child,take_lanes
+track,Track,live_set tracks N,child,clip_slots
+track,Track,live_set tracks N,child,arrangement_clips
+track,Track,live_set tracks N,child,devices
+track,Track,live_set tracks N,child,group_track
+track,Track,live_set tracks N,child,mixer_device
+track,Track,live_set tracks N,child,view
+track,Track,live_set tracks N,property,arm
+track,Track,live_set tracks N,property,available_input_routing_channels
+track,Track,live_set tracks N,property,available_input_routing_types
+track,Track,live_set tracks N,property,available_output_routing_channels
+track,Track,live_set tracks N,property,available_output_routing_types
+track,Track,live_set tracks N,property,back_to_arranger
+track,Track,live_set tracks N,property,can_be_armed
+track,Track,live_set tracks N,property,can_be_frozen
+track,Track,live_set tracks N,property,can_show_chains
+track,Track,live_set tracks N,property,color
+track,Track,live_set tracks N,property,color_index
+track,Track,live_set tracks N,property,fired_slot_index
+track,Track,live_set tracks N,property,fold_state
+track,Track,live_set tracks N,property,has_audio_input
+track,Track,live_set tracks N,property,has_audio_output
+track,Track,live_set tracks N,property,has_midi_input
+track,Track,live_set tracks N,property,has_midi_output
+track,Track,live_set tracks N,property,implicit_arm
+track,Track,live_set tracks N,property,input_meter_left
+track,Track,live_set tracks N,property,input_meter_level
+track,Track,live_set tracks N,property,input_meter_right
+track,Track,live_set tracks N,property,input_routing_channel
+track,Track,live_set tracks N,property,input_routing_type
+track,Track,live_set tracks N,property,is_foldable
+track,Track,live_set tracks N,property,is_frozen
+track,Track,live_set tracks N,property,is_grouped
+track,Track,live_set tracks N,property,is_part_of_selection
+track,Track,live_set tracks N,property,is_showing_chains
+track,Track,live_set tracks N,property,is_visible
+track,Track,live_set tracks N,property,mute
+track,Track,live_set tracks N,property,muted_via_solo
+track,Track,live_set tracks N,property,name
+track,Track,live_set tracks N,property,output_meter_left
+track,Track,live_set tracks N,property,output_meter_level
+track,Track,live_set tracks N,property,output_meter_right
+track,Track,live_set tracks N,property,performance_impact
+track,Track,live_set tracks N,property,output_routing_channel
+track,Track,live_set tracks N,property,output_routing_type
+track,Track,live_set tracks N,property,playing_slot_index
+track,Track,live_set tracks N,property,solo
+track_view,Track.View,live_set tracks N view,child,selected_device
+track_view,Track.View,live_set tracks N view,property,selected_device
+track_view,Track.View,live_set tracks N view,property,is_collapsed
+track_view,Track.View,live_set tracks N view,property,is_showing_chains
+track_view,Track.View,live_set tracks N view,property,selected_track
+track_view,Track.View,live_set tracks N view,property,visible_tracks
+clip_slot,ClipSlot,live_set tracks N clip_slots M,child,clip
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,color
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,color_index
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,controls_other_clips
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,has_clip
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,has_stop_button
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,is_group_slot
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,is_playing
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,is_recording
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,is_triggered
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,playing_status
+clip_slot,ClipSlot,live_set tracks N clip_slots M,property,will_record_on_start
+clip,Clip,live_set tracks N clip_slots M clip,child,view
+clip,Clip,live_set tracks N clip_slots M clip,property,available_warp_modes
+clip,Clip,live_set tracks N clip_slots M clip,property,color
+clip,Clip,live_set tracks N clip_slots M clip,property,color_index
+clip,Clip,live_set tracks N clip_slots M clip,property,end_marker
+clip,Clip,live_set tracks N clip_slots M clip,property,end_time
+clip,Clip,live_set tracks N clip_slots M clip,property,gain
+clip,Clip,live_set tracks N clip_slots M clip,property,gain_display_string
+clip,Clip,live_set tracks N clip_slots M clip,property,file_path
+clip,Clip,live_set tracks N clip_slots M clip,property,groove
+clip,Clip,live_set tracks N clip_slots M clip,property,has_envelopes
+clip,Clip,live_set tracks N clip_slots M clip,property,has_groove
+clip,Clip,live_set tracks N clip_slots M clip,property,is_session_clip
+clip,Clip,live_set tracks N clip_slots M clip,property,is_arrangement_clip
+clip,Clip,live_set tracks N clip_slots M clip,property,is_take_lane_clip
+clip,Clip,live_set tracks N clip_slots M clip,property,is_audio_clip
+clip,Clip,live_set tracks N clip_slots M clip,property,is_midi_clip
+clip,Clip,live_set tracks N clip_slots M clip,property,is_overdubbing
+clip,Clip,live_set tracks N clip_slots M clip,property,is_playing
+clip,Clip,live_set tracks N clip_slots M clip,property,is_recording
+clip,Clip,live_set tracks N clip_slots M clip,property,is_triggered
+clip,Clip,live_set tracks N clip_slots M clip,property,launch_mode
+clip,Clip,live_set tracks N clip_slots M clip,property,launch_quantization
+clip,Clip,live_set tracks N clip_slots M clip,property,legato
+clip,Clip,live_set tracks N clip_slots M clip,property,length
+clip,Clip,live_set tracks N clip_slots M clip,property,loop_end
+clip,Clip,live_set tracks N clip_slots M clip,property,loop_jump
+clip,Clip,live_set tracks N clip_slots M clip,property,loop_start
+clip,Clip,live_set tracks N clip_slots M clip,property,looping
+clip,Clip,live_set tracks N clip_slots M clip,property,muted
+clip,Clip,live_set tracks N clip_slots M clip,property,name
+clip,Clip,live_set tracks N clip_slots M clip,property,notes
+clip,Clip,live_set tracks N clip_slots M clip,property,warp_markers
+clip,Clip,live_set tracks N clip_slots M clip,property,pitch_coarse
+clip,Clip,live_set tracks N clip_slots M clip,property,pitch_fine
+clip,Clip,live_set tracks N clip_slots M clip,property,playing_position
+clip,Clip,live_set tracks N clip_slots M clip,property,playing_status
+clip,Clip,live_set tracks N clip_slots M clip,property,position
+clip,Clip,live_set tracks N clip_slots M clip,property,ram_mode
+clip,Clip,live_set tracks N clip_slots M clip,property,sample_length
+clip,Clip,live_set tracks N clip_slots M clip,property,sample_rate
+clip,Clip,live_set tracks N clip_slots M clip,property,signature_denominator
+clip,Clip,live_set tracks N clip_slots M clip,property,signature_numerator
+clip,Clip,live_set tracks N clip_slots M clip,property,start_marker
+clip,Clip,live_set tracks N clip_slots M clip,property,start_time
+clip,Clip,live_set tracks N clip_slots M clip,property,velocity_amount
+clip,Clip,live_set tracks N clip_slots M clip,property,warp_mode
+clip,Clip,live_set tracks N clip_slots M clip,property,warping
+clip,Clip,live_set tracks N clip_slots M clip,property,will_record_on_start
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,grid_is_triplet
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,grid_quantization
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,grid_snap
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,hide_envelope
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,show_envelope
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,show_loop
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,show_warp_as
+clip_view,Clip.View,live_set tracks N clip_slots M clip view,property,show_warp
+mixer,MixerDevice,live_set tracks N mixer_device,child,sends
+mixer,MixerDevice,live_set tracks N mixer_device,child,cue_volume
+mixer,MixerDevice,live_set tracks N mixer_device,child,crossfader
+mixer,MixerDevice,live_set tracks N mixer_device,child,left_split_stereo
+mixer,MixerDevice,live_set tracks N mixer_device,child,panning
+mixer,MixerDevice,live_set tracks N mixer_device,child,right_split_stereo
+mixer,MixerDevice,live_set tracks N mixer_device,child,song_tempo
+mixer,MixerDevice,live_set tracks N mixer_device,child,track_activator
+mixer,MixerDevice,live_set tracks N mixer_device,child,volume
+mixer,MixerDevice,live_set tracks N mixer_device,property,crossfade_assign
+mixer,MixerDevice,live_set tracks N mixer_device,property,panning_mode
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,automation_state
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,default_value
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,is_enabled
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,is_quantized
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,max
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,min
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,name
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,original_name
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,state
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,value
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,display_value
+parameter,DeviceParameter,live_set tracks N mixer_device volume,property,value_items

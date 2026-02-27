@@ -76,7 +76,7 @@ if [[ "$STRICT" -eq 1 ]]; then
   if has_match '"embed" : 0' "$DUMP_FILE"; then
     echo "[WARN] embed flag still reports 0 in metadata; validated embedded content signatures instead"
   fi
-  if has_match '/Users/hunterwiley/Code Projects/Clip Announcer' "$DUMP_FILE"; then
+  if has_match '/Users/hunterwiley/Code-Projects/Clip-Announcer' "$DUMP_FILE"; then
     echo "[WARN] local path metadata still present in dependency_cache"
   fi
   echo "[OK] strict release verification passed"

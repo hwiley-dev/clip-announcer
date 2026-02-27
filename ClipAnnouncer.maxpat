@@ -594,14 +594,14 @@
     "dependency_cache": [
       {
         "name": "clip_announcer.js",
-        "bootpath": "~/Code Projects/Clip Announcer",
+        "bootpath": "~/Code-Projects/Clip-Announcer",
         "patcherrelativepath": ".",
         "type": "TEXT",
         "implicit": 1
       },
       {
         "name": "clip_announcer_tts.js",
-        "bootpath": "~/Code Projects/Clip Announcer",
+        "bootpath": "~/Code-Projects/Clip-Announcer",
         "patcherrelativepath": ".",
         "type": "TEXT",
         "implicit": 1

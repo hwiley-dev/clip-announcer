@@ -2,9 +2,9 @@
 
 ## Artifact Contract
 
-- Editable source device: `/Users/hunterwiley/Code Projects/Clip Announcer/ClipAnnouncer.dev.amxd`
-- Distributable release artifact: `/Users/hunterwiley/Code Projects/Clip Announcer/dist/ClipAnnouncer.amxd`
-- Legacy artifact archive: `/Users/hunterwiley/Code Projects/Clip Announcer/archive/`
+- Editable source device: `/Users/hunterwiley/Code-Projects/Clip-Announcer/ClipAnnouncer.dev.amxd`
+- Distributable release artifact: `/Users/hunterwiley/Code-Projects/Clip-Announcer/dist/ClipAnnouncer.amxd`
+- Legacy artifact archive: `/Users/hunterwiley/Code-Projects/Clip-Announcer/archive/`
 
 Users should receive only `dist/ClipAnnouncer.amxd`.
 
