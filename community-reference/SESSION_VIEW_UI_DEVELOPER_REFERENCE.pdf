@@ -1,0 +1,717 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Type /Pages /Count 5 /Kids [6 0 R 7 0 R 8 0 R 9 0 R 10 0 R] >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 11 0 R >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 12 0 R >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 13 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 14 0 R >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 15 0 R >>
+endobj
+11 0 obj
+<< /Length 6301 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+
+1 1 1 rg 0 0 612 792 re f
+
+0.96 0.93 0.88 rg 0 582 612 210 re f
+
+0.74 0.47 0.18 rg 42 612 8 94 re f
+
+BT 0.14 0.15 0.18 rg /F2 22 Tf 26 TL 1 0 0 1 64 678 Tm (Session View UI Terms) Tj T* (Developer Reference) Tj ET
+BT 0.34 0.36 0.39 rg /F1 12 Tf 1 0 0 1 64 632 Tm (Readable LiveAPI surfaces for Max for Live accessibility and tooling work) Tj ET
+BT 0.41 0.25 0.08 rg /F1 10.5 Tf 1 0 0 1 64 611.5 Tm (Generated February 28, 2026) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.5 Tf 14 TL 1 0 0 1 42 545.5 Tm (This reference is intended for developers who need a fast, reliable map of what Ableton Live Session View) Tj T* (exposes through the Live Object Model. It is structured for quick orientation first, then deep reference,) Tj T* (so it works both as a briefing document and as a build-time lookup sheet.) Tj ET
+0.96 0.93 0.88 rg 42 441 528 71 re f
+
+0.74 0.47 0.18 RG 1 w 42 441 528 71 re S
+
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 54 493 Tm (What is verified here) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13 TL 1 0 0 1 54 477.8 Tm (The companion master CSV contains 212 verified readable entries across selection, global session state,) Tj T* (scenes, tracks, clip slots, clips, clip view, mixer surfaces, and device parameters. This PDF is the) Tj T* (developer-friendly presentation layer for that inventory.) Tj ET
+0.96 0.93 0.88 rg 42 411 528 20 re f
+
+0.74 0.47 0.18 rg 42 411 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 414 Tm (Quick Orientation) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.5 Tf 14 TL 1 0 0 1 42 392.5 Tm (If you are building a screen-reader bridge, announcer, or diagnostic tool, start at `live_set view` for) Tj T* (focus, then descend into `Track`, `ClipSlot`, and `Clip` only as needed. That keeps speech stable and) Tj T* (avoids needlessly expensive traversal.) Tj ET
+0.96 0.93 0.88 rg 42 340.3 150 18.7 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 340.3 150 18.7 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.9 Tf 10.7 TL 1 0 0 1 46 346.1 Tm (Start path) Tj ET
+0.96 0.93 0.88 rg 192 340.3 130 18.7 re f
+
+0.82 0.78 0.73 RG 0.5 w 192 340.3 130 18.7 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.9 Tf 10.7 TL 1 0 0 1 196 346.1 Tm (Why it matters) Tj ET
+0.96 0.93 0.88 rg 322 340.3 248 18.7 re f
+
+0.82 0.78 0.73 RG 0.5 w 322 340.3 248 18.7 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.9 Tf 10.7 TL 1 0 0 1 326 346.1 Tm (High-value readable members) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 310.3 150 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 46 327.7 Tm (`live_set view`) Tj ET
+0.82 0.78 0.73 RG 0.45 w 192 310.3 130 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 196 327.7 Tm (Current Session focus) Tj ET
+0.82 0.78 0.73 RG 0.45 w 322 310.3 248 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 326 327.7 Tm (selected_track, selected_scene, highlighted_clip_slot,) Tj T* (detail_clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 280.3 150 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 46 297.7 Tm (`live_set tracks N clip_slots M`) Tj ET
+0.82 0.78 0.73 RG 0.45 w 192 280.3 130 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 196 297.7 Tm (Selected grid cell state) Tj ET
+0.82 0.78 0.73 RG 0.45 w 322 280.3 248 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 326 297.7 Tm (has_clip, is_playing, is_recording, is_triggered,) Tj T* (playing_status, clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 250.3 150 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 46 267.7 Tm (`live_set tracks N clip_slots M) Tj T* (clip`) Tj ET
+0.82 0.78 0.73 RG 0.45 w 192 250.3 130 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 196 267.7 Tm (Detailed clip metadata) Tj ET
+0.82 0.78 0.73 RG 0.45 w 322 250.3 248 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 326 267.7 Tm (name, length, looping, loop_start, loop_end, playing_position,) Tj T* (is_audio_clip, is_midi_clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 220.3 150 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 46 237.7 Tm (`live_set tracks N`) Tj ET
+0.82 0.78 0.73 RG 0.45 w 192 220.3 130 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 196 237.7 Tm (Track identity and status) Tj ET
+0.82 0.78 0.73 RG 0.45 w 322 220.3 248 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 326 237.7 Tm (name, arm, mute, solo, fired_slot_index, playing_slot_index,) Tj T* (input_meter_level, output_meter_level) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 190.3 150 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 46 207.7 Tm (`live_set scenes N`) Tj ET
+0.82 0.78 0.73 RG 0.45 w 192 190.3 130 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 196 207.7 Tm (Scene row state) Tj ET
+0.82 0.78 0.73 RG 0.45 w 322 190.3 248 30 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.6 Tf 11 TL 1 0 0 1 326 207.7 Tm (name, is_triggered, tempo, tempo_enabled,) Tj T* (time_signature_numerator, time_signature_denominator) Tj ET
+0.96 0.93 0.88 rg 42 170.3 528 20 re f
+
+0.74 0.47 0.18 rg 42 170.3 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 173.3 Tm (Coverage Summary) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.5 Tf 14 TL 1 0 0 1 42 151.8 Tm (The reference inventory separates Session View into layers so other developers can reason about what) Tj T* (belongs to focus, what belongs to clip-state, and what belongs to global transport or mixer state.) Tj ET
+0.96 0.93 0.88 rg 42 113.5 220 18.8 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 113.5 220 18.8 re S
+
+BT 0.41 0.25 0.08 rg /F2 9 Tf 10.8 TL 1 0 0 1 46 119.3 Tm (Layer) Tj ET
+0.96 0.93 0.88 rg 262 113.5 308 18.8 re f
+
+0.82 0.78 0.73 RG 0.5 w 262 113.5 308 18.8 re S
+
+BT 0.41 0.25 0.08 rg /F2 9 Tf 10.8 TL 1 0 0 1 266 119.3 Tm (Verified entries) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 93.9 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 100.4 Tm (Selection Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 93.9 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 100.4 Tm (8) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 74.3 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 80.8 Tm (Session Global Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 74.3 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 80.8 Tm (57) Tj ET
+0.96 0.93 0.88 rg 0 736 612 56 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 58 m 570 58 l S
+
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 42 43.5 Tm (Generated from workflow-sorted LiveAPI inventory) Tj ET
+BT 0.34 0.36 0.39 rg /F2 8.5 Tf 1 0 0 1 516 43.5 Tm (1 / 5) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Length 11128 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+
+0.96 0.93 0.88 rg 42 705.2 220 18.8 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 705.2 220 18.8 re S
+
+BT 0.41 0.25 0.08 rg /F2 9 Tf 10.8 TL 1 0 0 1 46 711 Tm (Layer) Tj ET
+0.96 0.93 0.88 rg 262 705.2 308 18.8 re f
+
+0.82 0.78 0.73 RG 0.5 w 262 705.2 308 18.8 re S
+
+BT 0.41 0.25 0.08 rg /F2 9 Tf 10.8 TL 1 0 0 1 266 711 Tm (Verified entries) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 685.6 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 692.1 Tm (Scene Row Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 685.6 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 692.1 Tm (11) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 666 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 672.5 Tm (Track Column Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 666 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 672.5 Tm (47) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 646.4 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 652.9 Tm (Track UI Subview) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 646.4 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 652.9 Tm (3) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 626.8 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 633.3 Tm (Clip Slot Cell Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 626.8 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 633.3 Tm (12) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 607.2 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 613.7 Tm (Session Clip Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 607.2 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 613.7 Tm (49) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 587.6 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 594.1 Tm (Clip UI Subview) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 587.6 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 594.1 Tm (2) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 568 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 574.5 Tm (Mixer Strip Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 568 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 574.5 Tm (11) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 548.4 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 554.9 Tm (Parameter Read Layer) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 548.4 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 554.9 Tm (12) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 528.8 220 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 46 535.3 Tm (Total verified readable entries) Tj ET
+0.82 0.78 0.73 RG 0.45 w 262 528.8 308 19.6 re S
+
+BT 0.14 0.15 0.18 rg /F1 9.1 Tf 11.6 TL 1 0 0 1 266 535.3 Tm (212) Tj ET
+0.96 0.93 0.88 rg 42 508.8 528 20 re f
+
+0.74 0.47 0.18 rg 42 508.8 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 511.8 Tm (Exhaustive Object Map) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.5 Tf 14 TL 1 0 0 1 42 490.3 Tm (This table is the fastest complete map from object to canonical path and practical development role.) Tj ET
+0.96 0.93 0.88 rg 42 466.5 86 18.3 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 466.5 86 18.3 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.5 Tf 10.3 TL 1 0 0 1 46 472.3 Tm (Object) Tj ET
+0.96 0.93 0.88 rg 128 466.5 172 18.3 re f
+
+0.82 0.78 0.73 RG 0.5 w 128 466.5 172 18.3 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.5 Tf 10.3 TL 1 0 0 1 132 472.3 Tm (Canonical path) Tj ET
+0.96 0.93 0.88 rg 300 466.5 44 18.3 re f
+
+0.82 0.78 0.73 RG 0.5 w 300 466.5 44 18.3 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.5 Tf 10.3 TL 1 0 0 1 304 472.3 Tm (Entries) Tj ET
+0.96 0.93 0.88 rg 344 466.5 226 18.3 re f
+
+0.82 0.78 0.73 RG 0.5 w 344 466.5 226 18.3 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.5 Tf 10.3 TL 1 0 0 1 348 472.3 Tm (Developer use) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 438.1 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 454.4 Tm (Song.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 438.1 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 454.4 Tm (live_set view) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 438.1 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 454.4 Tm (8) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 438.1 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 454.4 Tm (Best first stop for current focus, highlighted slot, and) Tj T* (selected track/scene context.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 409.7 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 426 Tm (Song) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 409.7 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 426 Tm (live_set) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 409.7 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 426 Tm (57) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 409.7 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 426 Tm (Global transport, tempo, recording, quantization, scale,) Tj T* (and session-wide policy context.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 381.3 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 397.6 Tm (Scene) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 381.3 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 397.6 Tm (live_set scenes N) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 381.3 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 397.6 Tm (11) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 381.3 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 397.6 Tm (Scene naming, trigger state, and scene-scoped tempo or) Tj T* (signature metadata.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 352.9 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 369.2 Tm (Track) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 352.9 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 369.2 Tm (live_set tracks N) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 352.9 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 369.2 Tm (47) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 352.9 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 369.2 Tm (Column identity, arm/mute/solo state, routing, meters,) Tj T* (and current launch state.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 324.5 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 340.8 Tm (Track.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 324.5 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 340.8 Tm (live_set tracks N view) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 324.5 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 340.8 Tm (3) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 324.5 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 340.8 Tm (Narrow UI subview. Useful for selected device and) Tj T* (collapsed/insert-mode state.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 296.1 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 312.4 Tm (ClipSlot) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 296.1 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 312.4 Tm (live_set tracks N clip_slots M) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 296.1 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 312.4 Tm (12) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 296.1 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 312.4 Tm (Most important Session cell object for launch, trigger,) Tj T* (record, and occupancy state.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 267.7 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 284 Tm (Clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 267.7 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 284 Tm (live_set tracks N clip_slots M clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 267.7 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 284 Tm (49) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 267.7 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 284 Tm (Detailed clip identity, timing, looping, clip type, and) Tj T* (playback/recording metadata.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 249.5 86 18.2 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 255.6 Tm (Clip.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 249.5 172 18.2 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 255.6 Tm (live_set tracks N clip_slots M clip view) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 249.5 44 18.2 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 255.6 Tm (2) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 249.5 226 18.2 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 255.6 Tm (Grid-display state for the clip editor view.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 221.1 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 237.4 Tm (MixerDevice) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 221.1 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 237.4 Tm (live_set tracks N mixer_device) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 221.1 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 237.4 Tm (11) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 221.1 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 237.4 Tm (Mixer strip access point for volume, pan, sends,) Tj T* (activator, and crossfader children.) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 192.7 86 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 46 209 Tm (DeviceParameter) Tj ET
+0.82 0.78 0.73 RG 0.45 w 128 192.7 172 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 132 209 Tm (live_set tracks N mixer_device volume) Tj ET
+0.82 0.78 0.73 RG 0.45 w 300 192.7 44 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 304 209 Tm (12) Tj ET
+0.82 0.78 0.73 RG 0.45 w 344 192.7 226 28.4 re S
+
+BT 0.14 0.15 0.18 rg /F1 8.1 Tf 10.2 TL 1 0 0 1 348 209 Tm (Readable leaf for numeric/display values on mixer and) Tj T* (device controls.) Tj ET
+0.96 0.93 0.88 rg 42 172.7 528 20 re f
+
+0.74 0.47 0.18 rg 42 172.7 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 175.7 Tm (Song.View) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 154.5 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 154.5 Tm (Layer: Selection Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 140 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 140 Tm (Canonical path: live_set view) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 125.5 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 125.5 Tm (Readable entry count: 8) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 111 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 111 Tm (Best first stop for current focus, highlighted slot, and selected track/scene context.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 95.7 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 81.2 Tm (detail_clip, highlighted_clip_slot, selected_chain, selected_parameter, selected_scene, selected_track) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 730 m 570 730 l S
+
+BT 0.34 0.36 0.39 rg /F2 10 Tf 1 0 0 1 42 734 Tm (Session View UI Terms) Tj ET
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 460 735.5 Tm (Community developer reference) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 58 m 570 58 l S
+
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 42 43.5 Tm (Generated from workflow-sorted LiveAPI inventory) Tj ET
+BT 0.34 0.36 0.39 rg /F2 8.5 Tf 1 0 0 1 516 43.5 Tm (2 / 5) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Length 5943 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 713 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 698.5 Tm (draw_mode, follow_song) Tj ET
+0.96 0.93 0.88 rg 42 673.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 673.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 676.5 Tm (Song) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 655.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 655.3 Tm (Layer: Session Global Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 640.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 640.8 Tm (Canonical path: live_set) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 626.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 626.3 Tm (Readable entry count: 57) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 611.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 611.8 Tm (Global transport, tempo, recording, quantization, scale, and session-wide policy context.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 596.5 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 582 Tm (cue_points, return_tracks, scenes, tracks, visible_tracks, master_track, view, groove_pool, tuning_system) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 566 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 551.5 Tm (appointed_device, arrangement_overdub, back_to_arranger, can_capture_midi, can_jump_to_next_cue,) Tj T* (can_jump_to_prev_cue, can_redo, can_undo, clip_trigger_quantization, count_in_duration, current_song_time,) Tj T* (exclusive_arm, exclusive_solo, file_path, groove_amount, is_ableton_link_enabled,) Tj T* (is_ableton_link_start_stop_sync_enabled, is_counting_in, is_playing, last_event_time, loop, loop_length, loop_start,) Tj T* (metronome, midi_recording_quantization, name, nudge_down, nudge_up, tempo_follower_enabled, overdub, punch_in,) Tj T* (punch_out, re_enable_automation_enabled, record_mode, root_note, scale_intervals, scale_mode, scale_name,) Tj T* (select_on_launch, session_automation_record, session_record, session_record_status, signature_denominator,) Tj T* (signature_numerator, song_length, start_time, swing_amount, tempo) Tj ET
+0.96 0.93 0.88 rg 42 439 528 20 re f
+
+0.74 0.47 0.18 rg 42 439 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 442 Tm (Scene) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 420.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 420.8 Tm (Layer: Scene Row Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 406.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 406.3 Tm (Canonical path: live_set scenes N) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 391.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 391.8 Tm (Readable entry count: 11) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 377.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 377.3 Tm (Scene naming, trigger state, and scene-scoped tempo or signature metadata.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 362 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 347.5 Tm (clip_slots) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 331.5 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 317 Tm (color, color_index, is_empty, is_triggered, name, tempo, tempo_enabled, time_signature_numerator,) Tj T* (time_signature_denominator, time_signature_enabled) Tj ET
+0.96 0.93 0.88 rg 42 279.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 279.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 282.5 Tm (Track) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 261.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 261.3 Tm (Layer: Track Column Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 246.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 246.8 Tm (Canonical path: live_set tracks N) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 232.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 232.3 Tm (Readable entry count: 47) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 217.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 217.8 Tm (Column identity, arm/mute/solo state, routing, meters, and current launch state.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 202.5 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 188 Tm (take_lanes, clip_slots, arrangement_clips, devices, group_track, mixer_device, view) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 172 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 157.5 Tm (arm, available_input_routing_channels, available_input_routing_types, available_output_routing_channels,) Tj T* (available_output_routing_types, back_to_arranger, can_be_armed, can_be_frozen, can_show_chains, color,) Tj T* (color_index, fired_slot_index, fold_state, has_audio_input, has_audio_output, has_midi_input, has_midi_output,) Tj T* (implicit_arm, input_meter_left, input_meter_level, input_meter_right, input_routing_channel, input_routing_type,) Tj T* (is_foldable, is_frozen, is_grouped, is_part_of_selection, is_showing_chains, is_visible, mute, muted_via_solo, name,) Tj T* (output_meter_left, output_meter_level, output_meter_right, performance_impact, output_routing_channel,) Tj T* (output_routing_type, playing_slot_index, solo) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 730 m 570 730 l S
+
+BT 0.34 0.36 0.39 rg /F2 10 Tf 1 0 0 1 42 734 Tm (Session View UI Terms) Tj ET
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 460 735.5 Tm (Community developer reference) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 58 m 570 58 l S
+
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 42 43.5 Tm (Generated from workflow-sorted LiveAPI inventory) Tj ET
+BT 0.34 0.36 0.39 rg /F2 8.5 Tf 1 0 0 1 516 43.5 Tm (3 / 5) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Length 5824 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+
+0.96 0.93 0.88 rg 42 704 528 20 re f
+
+0.74 0.47 0.18 rg 42 704 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 707 Tm (Track.View) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 685.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 685.8 Tm (Layer: Track UI Subview) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 671.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 671.3 Tm (Canonical path: live_set tracks N view) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 656.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 656.8 Tm (Readable entry count: 3) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 642.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 642.3 Tm (Narrow UI subview. Useful for selected device and collapsed/insert-mode state.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 627 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 612.5 Tm (selected_device) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 596.5 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 582 Tm (device_insert_mode, is_collapsed) Tj ET
+0.96 0.93 0.88 rg 42 557 528 20 re f
+
+0.74 0.47 0.18 rg 42 557 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 560 Tm (ClipSlot) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 538.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 538.8 Tm (Layer: Clip Slot Cell Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 524.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 524.3 Tm (Canonical path: live_set tracks N clip_slots M) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 509.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 509.8 Tm (Readable entry count: 12) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 495.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 495.3 Tm (Most important Session cell object for launch, trigger, record, and occupancy state.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 480 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 465.5 Tm (clip) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 449.5 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 435 Tm (color, color_index, controls_other_clips, has_clip, has_stop_button, is_group_slot, is_playing, is_recording,) Tj T* (is_triggered, playing_status, will_record_on_start) Tj ET
+0.96 0.93 0.88 rg 42 397.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 397.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 400.5 Tm (Clip) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 379.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 379.3 Tm (Layer: Session Clip Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 364.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 364.8 Tm (Canonical path: live_set tracks N clip_slots M clip) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 350.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 350.3 Tm (Readable entry count: 49) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 335.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 335.8 Tm (Detailed clip identity, timing, looping, clip type, and playback/recording metadata.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 320.5 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 306 Tm (view) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 290 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 275.5 Tm (available_warp_modes, color, color_index, end_marker, end_time, gain, gain_display_string, file_path, groove,) Tj T* (has_envelopes, has_groove, is_session_clip, is_arrangement_clip, is_take_lane_clip, is_audio_clip, is_midi_clip,) Tj T* (is_overdubbing, is_playing, is_recording, is_triggered, launch_mode, launch_quantization, legato, length, loop_end,) Tj T* (loop_jump, loop_start, looping, muted, name, notes, warp_markers, pitch_coarse, pitch_fine, playing_position,) Tj T* (playing_status, position, ram_mode, sample_length, sample_rate, signature_denominator, signature_numerator,) Tj T* (start_marker, start_time, velocity_amount, warp_mode, warping, will_record_on_start) Tj ET
+0.96 0.93 0.88 rg 42 188 528 20 re f
+
+0.74 0.47 0.18 rg 42 188 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 191 Tm (Clip.View) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 169.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 169.8 Tm (Layer: Clip UI Subview) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 155.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 155.3 Tm (Canonical path: live_set tracks N clip_slots M clip view) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 140.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 140.8 Tm (Readable entry count: 2) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 126.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 126.3 Tm (Grid-display state for the clip editor view.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 111 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 96.5 Tm (None) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 80.5 Tm (Readable properties) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 730 m 570 730 l S
+
+BT 0.34 0.36 0.39 rg /F2 10 Tf 1 0 0 1 42 734 Tm (Session View UI Terms) Tj ET
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 460 735.5 Tm (Community developer reference) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 58 m 570 58 l S
+
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 42 43.5 Tm (Generated from workflow-sorted LiveAPI inventory) Tj ET
+BT 0.34 0.36 0.39 rg /F2 8.5 Tf 1 0 0 1 516 43.5 Tm (4 / 5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Length 7929 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 714.5 Tm (grid_is_triplet, grid_quantization) Tj ET
+0.96 0.93 0.88 rg 42 689.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 689.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 692.5 Tm (MixerDevice) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 671.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 671.3 Tm (Layer: Mixer Strip Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 656.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 656.8 Tm (Canonical path: live_set tracks N mixer_device) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 642.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 642.3 Tm (Readable entry count: 11) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 627.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 627.8 Tm (Mixer strip access point for volume, pan, sends, activator, and crossfader children.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 612.5 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 598 Tm (sends, cue_volume, crossfader, left_split_stereo, panning, right_split_stereo, song_tempo, track_activator, volume) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 582 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 567.5 Tm (crossfade_assign, panning_mode) Tj ET
+0.96 0.93 0.88 rg 42 542.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 542.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 545.5 Tm (DeviceParameter) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 524.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 524.3 Tm (Layer: Parameter Read Layer) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 509.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 509.8 Tm (Canonical path: live_set tracks N mixer_device volume) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 495.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 495.3 Tm (Readable entry count: 12) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 480.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 480.8 Tm (Readable leaf for numeric/display values on mixer and device controls.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 465.5 Tm (Readable children) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 451 Tm (None) Tj ET
+BT 0.41 0.25 0.08 rg /F2 11 Tf 1 0 0 1 42 435 Tm (Readable properties) Tj ET
+BT 0.14 0.15 0.18 rg /F1 9.5 Tf 12.5 TL 1 0 0 1 42 420.5 Tm (automation_state, default_value, is_enabled, is_quantized, max, min, name, original_name, state, value, display_value,) Tj T* (value_items) Tj ET
+0.96 0.93 0.88 rg 42 383 528 20 re f
+
+0.74 0.47 0.18 rg 42 383 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 386 Tm (Recommended Minimum Read Set) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 364.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 364.8 Tm (Focus: selected_track, selected_scene, highlighted_clip_slot.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 350.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 350.3 Tm (Slot state: has_clip, is_playing, is_recording, is_triggered.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 335.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 335.8 Tm (Clip identity and timing: name, length, looping, loop_start, loop_end.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 321.3 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 321.3 Tm (Track status: arm, mute, solo, playing_slot_index.) Tj ET
+BT 0.41 0.25 0.08 rg /F2 10.2 Tf 1 0 0 1 42 306.8 Tm (-) Tj ET
+BT 0.14 0.15 0.18 rg /F1 10.2 Tf 13.5 TL 1 0 0 1 58 306.8 Tm (Global state: is_playing, tempo, session_record.) Tj ET
+0.96 0.93 0.88 rg 42 282.5 528 20 re f
+
+0.74 0.47 0.18 rg 42 282.5 6 20 re f
+
+BT 0.14 0.15 0.18 rg /F2 13 Tf 1 0 0 1 56 285.5 Tm (Primary Sources) Tj ET
+0.96 0.93 0.88 rg 42 256.1 112 18.4 re f
+
+0.82 0.78 0.73 RG 0.5 w 42 256.1 112 18.4 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.6 Tf 10.4 TL 1 0 0 1 46 261.9 Tm (Source) Tj ET
+0.96 0.93 0.88 rg 154 256.1 416 18.4 re f
+
+0.82 0.78 0.73 RG 0.5 w 154 256.1 416 18.4 re S
+
+BT 0.41 0.25 0.08 rg /F2 8.6 Tf 10.4 TL 1 0 0 1 158 261.9 Tm (URL) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 238.5 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 244.3 Tm (LOM index) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 238.5 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 244.3 Tm (https://docs.cycling74.com/apiref/lom/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 220.9 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 226.7 Tm (Song.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 220.9 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 226.7 Tm (https://docs.cycling74.com/apiref/lom/song_view/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 203.3 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 209.1 Tm (Song) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 203.3 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 209.1 Tm (https://docs.cycling74.com/apiref/lom/song/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 185.7 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 191.5 Tm (Scene) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 185.7 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 191.5 Tm (https://docs.cycling74.com/apiref/lom/scene/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 168.1 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 173.9 Tm (Track) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 168.1 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 173.9 Tm (https://docs.cycling74.com/apiref/lom/track/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 150.5 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 156.3 Tm (Track.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 150.5 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 156.3 Tm (https://docs.cycling74.com/apiref/lom/track_view/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 132.9 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 138.7 Tm (ClipSlot) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 132.9 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 138.7 Tm (https://docs.cycling74.com/apiref/lom/clipslot/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 115.3 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 121.1 Tm (Clip) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 115.3 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 121.1 Tm (https://docs.cycling74.com/apiref/lom/clip/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 97.7 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 103.5 Tm (Clip.View) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 97.7 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 103.5 Tm (https://docs.cycling74.com/apiref/lom/clip_view/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 80.1 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 85.9 Tm (MixerDevice) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 80.1 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 85.9 Tm (https://docs.cycling74.com/apiref/lom/mixerdevice/) Tj ET
+0.82 0.78 0.73 RG 0.45 w 42 62.5 112 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 46 68.3 Tm (DeviceParameter) Tj ET
+0.82 0.78 0.73 RG 0.45 w 154 62.5 416 17.6 re S
+
+BT 0.14 0.15 0.18 rg /F3 7.8 Tf 9.6 TL 1 0 0 1 158 68.3 Tm (https://docs.cycling74.com/apiref/lom/deviceparameter/) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 730 m 570 730 l S
+
+BT 0.34 0.36 0.39 rg /F2 10 Tf 1 0 0 1 42 734 Tm (Session View UI Terms) Tj ET
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 460 735.5 Tm (Community developer reference) Tj ET
+0.82 0.78 0.73 RG 0.5 w 42 58 m 570 58 l S
+
+BT 0.34 0.36 0.39 rg /F1 8.5 Tf 1 0 0 1 42 43.5 Tm (Generated from workflow-sorted LiveAPI inventory) Tj ET
+BT 0.34 0.36 0.39 rg /F2 8.5 Tf 1 0 0 1 516 43.5 Tm (5 / 5) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000228 00000 n 
+0000000301 00000 n 
+0000000383 00000 n 
+0000000540 00000 n 
+0000000697 00000 n 
+0000000854 00000 n 
+0000001011 00000 n 
+0000001169 00000 n 
+0000007522 00000 n 
+0000018703 00000 n 
+0000024698 00000 n 
+0000030574 00000 n 
+0000038555 00000 n 
+trailer << /Size 17 /Root 16 0 R >>
+startxref
+38605
+%%EOF

@@ -72,6 +72,10 @@ if [[ "$STRICT" -eq 1 ]]; then
   # Freeze may keep metadata flags/paths even when script bodies are embedded.
   # Strict mode validates embedded content signatures instead of raw embed flags.
   must_have 'announce aborted: state unavailable' 'embedded clip_announcer.js content'
+  must_have 'announce_where' '3-button JS command content'
+  must_have 'buildWhereSummary' 'WHERE summary builder content'
+  must_have 'buildWhatSummary' 'WHAT summary builder content'
+  must_have 'buildStateSummary' 'STATE summary builder content'
   must_have 'Clip announcer speech test' 'embedded clip_announcer_tts.js content'
   if has_match '"embed" : 0' "$DUMP_FILE"; then
     echo "[WARN] embed flag still reports 0 in metadata; validated embedded content signatures instead"

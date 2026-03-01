@@ -1,0 +1,399 @@
+Session View UI Terms Developer Reference
+Updated: February 27, 2026
+Audience: Max for Live developers, accessibility-tool builders, LiveAPI researchers
+Verification basis: official Cycling '74 Live Object Model docs
+
+PURPOSE
+This document is a developer-facing reference for the readable Session View UI surfaces available through LiveAPI.
+
+It answers three practical questions:
+- What parts of Session View can a Max for Live device read?
+- Which object paths matter most for accessibility and announcement tools?
+- What is the exhaustive set of readable children and properties on those Session-facing objects?
+
+WHAT "UI TERMS" MEANS HERE
+- Readable object names, children, and properties that correspond to Session View UI state.
+- Excludes write-only functions, setters, and non-Session domains.
+
+COVERAGE SUMMARY
+- selection: 8
+- session_global: 57
+- scene: 11
+- track: 47
+- track_view: 3
+- clip_slot: 12
+- clip: 49
+- clip_view: 2
+- mixer: 11
+- parameter: 12
+- total: 212
+
+FASTEST ENTRY POINTS
+1. live_set view
+- selected_track
+- selected_scene
+- highlighted_clip_slot
+- detail_clip
+
+2. live_set tracks N clip_slots M
+- has_clip
+- is_playing
+- is_recording
+- is_triggered
+- playing_status
+- clip
+
+3. live_set tracks N clip_slots M clip
+- name
+- length
+- looping
+- loop_start
+- loop_end
+- playing_position
+- is_audio_clip
+- is_midi_clip
+- color
+
+4. live_set tracks N
+- name
+- color
+- arm
+- mute
+- solo
+- playing_slot_index
+- fired_slot_index
+- input_meter_level
+- output_meter_level
+
+5. live_set scenes N
+- name
+- color
+- is_triggered
+- tempo
+- tempo_enabled
+- time_signature_numerator
+- time_signature_denominator
+
+EXHAUSTIVE READABLE OBJECT MAP
+
+A. Selection Layer
+Object: Song.View
+Path: live_set view
+Readable children:
+- detail_clip
+- highlighted_clip_slot
+- selected_chain
+- selected_parameter
+- selected_scene
+- selected_track
+Readable properties:
+- draw_mode
+- follow_song
+Developer note:
+- selected_track, selected_scene, and highlighted_clip_slot are the core focus signals.
+
+B. Session Global Layer
+Object: Song
+Path: live_set
+Readable children:
+- cue_points
+- return_tracks
+- scenes
+- tracks
+- visible_tracks
+- master_track
+- view
+- groove_pool
+- tuning_system
+Readable properties:
+- appointed_device
+- arrangement_overdub
+- back_to_arranger
+- can_capture_midi
+- can_jump_to_next_cue
+- can_jump_to_prev_cue
+- can_redo
+- can_undo
+- clip_trigger_quantization
+- count_in_duration
+- current_song_time
+- exclusive_arm
+- exclusive_solo
+- file_path
+- groove_amount
+- is_ableton_link_enabled
+- is_ableton_link_start_stop_sync_enabled
+- is_counting_in
+- is_playing
+- last_event_time
+- loop
+- loop_length
+- loop_start
+- metronome
+- midi_recording_quantization
+- name
+- nudge_down
+- nudge_up
+- tempo_follower_enabled
+- overdub
+- punch_in
+- punch_out
+- re_enable_automation_enabled
+- record_mode
+- root_note
+- scale_intervals
+- scale_mode
+- scale_name
+- select_on_launch
+- session_automation_record
+- session_record
+- session_record_status
+- signature_denominator
+- signature_numerator
+- song_length
+- start_time
+- swing_amount
+- tempo
+
+C. Scene Row Layer
+Object: Scene
+Path: live_set scenes N
+Readable children:
+- clip_slots
+Readable properties:
+- color
+- color_index
+- is_empty
+- is_triggered
+- name
+- tempo
+- tempo_enabled
+- time_signature_numerator
+- time_signature_denominator
+- time_signature_enabled
+
+D. Track Column Layer
+Object: Track
+Path: live_set tracks N
+Readable children:
+- take_lanes
+- clip_slots
+- arrangement_clips
+- devices
+- group_track
+- mixer_device
+- view
+Readable properties:
+- arm
+- available_input_routing_channels
+- available_input_routing_types
+- available_output_routing_channels
+- available_output_routing_types
+- back_to_arranger
+- can_be_armed
+- can_be_frozen
+- can_show_chains
+- color
+- color_index
+- fired_slot_index
+- fold_state
+- has_audio_input
+- has_audio_output
+- has_midi_input
+- has_midi_output
+- implicit_arm
+- input_meter_left
+- input_meter_level
+- input_meter_right
+- input_routing_channel
+- input_routing_type
+- is_foldable
+- is_frozen
+- is_grouped
+- is_part_of_selection
+- is_showing_chains
+- is_visible
+- mute
+- muted_via_solo
+- name
+- output_meter_left
+- output_meter_level
+- output_meter_right
+- performance_impact
+- output_routing_channel
+- output_routing_type
+- playing_slot_index
+- solo
+
+E. Track UI Subview
+Object: Track.View
+Path: live_set tracks N view
+Readable children:
+- selected_device
+Readable properties:
+- device_insert_mode
+- is_collapsed
+Developer note:
+- Track.View is narrower than many developers expect.
+
+F. Clip Slot Cell Layer
+Object: ClipSlot
+Path: live_set tracks N clip_slots M
+Readable children:
+- clip
+Readable properties:
+- color
+- color_index
+- controls_other_clips
+- has_clip
+- has_stop_button
+- is_group_slot
+- is_playing
+- is_recording
+- is_triggered
+- playing_status
+- will_record_on_start
+
+G. Session Clip Layer
+Object: Clip
+Path: live_set tracks N clip_slots M clip
+Readable children:
+- view
+Readable properties:
+- available_warp_modes
+- color
+- color_index
+- end_marker
+- end_time
+- gain
+- gain_display_string
+- file_path
+- groove
+- has_envelopes
+- has_groove
+- is_session_clip
+- is_arrangement_clip
+- is_take_lane_clip
+- is_audio_clip
+- is_midi_clip
+- is_overdubbing
+- is_playing
+- is_recording
+- is_triggered
+- launch_mode
+- launch_quantization
+- legato
+- length
+- loop_end
+- loop_jump
+- loop_start
+- looping
+- muted
+- name
+- notes
+- warp_markers
+- pitch_coarse
+- pitch_fine
+- playing_position
+- playing_status
+- position
+- ram_mode
+- sample_length
+- sample_rate
+- signature_denominator
+- signature_numerator
+- start_marker
+- start_time
+- velocity_amount
+- warp_mode
+- warping
+- will_record_on_start
+
+H. Clip UI Subview
+Object: Clip.View
+Path: live_set tracks N clip_slots M clip view
+Readable properties:
+- grid_is_triplet
+- grid_quantization
+
+I. Mixer Strip Layer
+Object: MixerDevice
+Path: live_set tracks N mixer_device
+Readable children:
+- sends
+- cue_volume
+- crossfader
+- left_split_stereo
+- panning
+- right_split_stereo
+- song_tempo
+- track_activator
+- volume
+Readable properties:
+- crossfade_assign
+- panning_mode
+
+J. Parameter Read Layer
+Object: DeviceParameter
+Example path: live_set tracks N mixer_device volume
+Readable properties:
+- automation_state
+- default_value
+- display_value
+- is_enabled
+- is_quantized
+- max
+- min
+- name
+- original_name
+- state
+- value
+- value_items
+
+RECOMMENDED MINIMUM READ SET FOR ACCESSIBILITY DEVICES
+Focus / location
+- live_set view -> selected_track
+- live_set view -> selected_scene
+- live_set view -> highlighted_clip_slot
+- track -> name
+
+Slot state
+- clip_slot -> has_clip
+- clip_slot -> is_playing
+- clip_slot -> is_recording
+- clip_slot -> is_triggered
+
+Clip identity and timing
+- clip -> name
+- clip -> length
+- clip -> looping
+- clip -> loop_start
+- clip -> loop_end
+
+Track state
+- track -> arm
+- track -> mute
+- track -> solo
+- track -> playing_slot_index
+
+Global state
+- live_set -> is_playing
+- live_set -> tempo
+- live_set -> session_record
+
+COMPANION FILES
+- SESSION_VIEW_READABLE_UI_MASTER_LIST.md
+- SESSION_VIEW_READABLE_UI_MASTER_LIST.csv
+
+SOURCES
+- Cycling '74 Live Object Model Index
+- Song.View
+- Song
+- Scene
+- Track
+- Track.View
+- ClipSlot
+- Clip
+- Clip.View
+- MixerDevice
+- DeviceParameter
