@@ -82,14 +82,17 @@ function announce() {
 }
 
 function announce_where() {
+    resetButton("where_button");
     performAnnounce("WHERE", buildWhereSummary);
 }
 
 function announce_what() {
+    resetButton("what_button");
     performAnnounce("WHAT", buildWhatSummary);
 }
 
 function announce_state() {
+    resetButton("state_button");
     performAnnounce("STATE", buildStateSummary);
 }
 
@@ -110,7 +113,23 @@ function performAnnounce(label, buildFn) {
 
     var summary = buildFn(state);
     postInfo(label + " -> " + summary);
-    outlet(0, "speak", summary);
+    outlet(0, "announce", label, summary);
+}
+
+function resetButton(varname) {
+    try {
+        if (!this.patcher) {
+            return;
+        }
+
+        var button = this.patcher.getnamed(varname);
+        if (button) {
+            // Reset mapped live.button controls so each press behaves momentarily.
+            button.message("set", 0);
+        }
+    } catch (e) {
+        postError("button reset failed (" + varname + "): " + e);
+    }
 }
 
 function refresh() {

@@ -9,9 +9,9 @@
 | T3 | Empty slot announce | Select empty slot and press `WHAT` | `WHAT -> Clip: Empty.` | Speaks once; no crash |
 | T4 | Populated slot announce | Select slot with clip and press `WHAT` | `WHAT -> Clip: <name>. Length: ... Loop: ...` and clip metadata in `STATE` | Speaks once with clip info |
 | T5 | Status announce | While clip stopped/playing/recording press `STATE` | `STATE -> Status: ...` | Speaks status exactly once |
-| T6 | Rapid button press | Press `WHERE` (or `WHAT`, `STATE`) repeatedly | `[ClipAnnouncer] announce skipped (debounce)` appears | No speech spam or overlap |
+| T6 | Repeat press stop | Press `WHERE`, then press `WHERE` again while speech is still active | First press logs `WHERE -> ...`; second press logs `[ClipAnnouncer:TTS] stopping speech: repeat WHERE trigger` | Same-category second press stops current speech |
 | T7 | Rapid navigation | Move quickly across tracks/scenes while testing `WHERE` + `WHAT` | No uncaught `[ERROR]` spam; stable `STATE` updates | No crash, remains responsive |
-| T8 | Keyboard mapping | Map keys in Live Key Map mode to `WHERE/WHAT/STATE`, then trigger by keyboard | Corresponding `WHERE -> ...`, `WHAT -> ...`, `STATE -> ...` lines | Keyboard map path works without MIDI note triggers |
+| T8 | Keyboard mapping | Map keys in Live Key Map mode to `WHERE/WHAT/STATE`, then trigger by keyboard | Corresponding `WHERE -> ...`, `WHAT -> ...`, `STATE -> ...` lines on the first key press | Keyboard map path works on single presses without MIDI note triggers |
 | T9 | MIDI instrument isolation | Play MIDI notes into instrument while Clip Announcer track is armed/monitored | No Clip Announcer trigger lines caused by note input | Device does not intercept note stream |
 | T10 | Speech diagnostic | In edit mode trigger `speak_test` message to node.script | `[ClipAnnouncer:TTS] speaking: Clip announcer speech test` | Audible speech output |
 | T11 | Isolation packaging | Load only copied release `.amxd` in clean folder | No missing JS/TTS dependency errors | Works without sidecar files |
@@ -31,3 +31,5 @@
   - `WHERE -> Track {index}: {track_name}. Slot {slot_index}.`
   - `WHAT -> Clip: {clip_name or Empty}.` (+ length/loop fields when clip exists)
   - `STATE -> Status: {Stopped/Playing/Recording}.`
+- Keyboard mapped presses fire on the first press.
+- Re-pressing the active category stops speech instead of requiring a second press to trigger.

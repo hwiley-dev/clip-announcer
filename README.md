@@ -14,6 +14,8 @@ Clip Announcer is an Accessibility Screen Reader Tool for Max for Live device. I
 
 - Manual triggers: click `WHERE`, `WHAT`, or `STATE`.
 - Keyboard mapping path: map each button in Ableton Live Key Map mode.
+- Mapped button presses are reset back to `off` after firing so each press behaves like a trigger instead of a latched toggle.
+- Pressing the same category again while speech is active stops the current spoken announcement.
 - No default MIDI note trigger is wired, to avoid collisions with instrument keyboard input.
 - Live/M4L still does not expose a deterministic per-device global keyboard combo API, so mapping behavior remains Live-focus dependent.
 
