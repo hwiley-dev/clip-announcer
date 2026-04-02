@@ -1,4 +1,4 @@
-# Clip Announcer Accessibility Tool
+# Clip Announcer Accessibility Tool 1.2
 
 Clip Announcer is an Accessibility Screen Reader Tool for Max for Live device. It reads the currently highlighted clip context in Ableton Live and speaks a deterministic summary using macOS text-to-speech.
 
